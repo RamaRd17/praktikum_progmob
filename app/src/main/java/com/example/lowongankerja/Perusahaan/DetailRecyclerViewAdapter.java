@@ -15,6 +15,10 @@ import android.widget.Toast;
 import com.example.lowongankerja.ApiHelper.BaseApiHelper;
 import com.example.lowongankerja.ApiHelper.UtilsApi;
 import com.example.lowongankerja.BottomActivity;
+import com.example.lowongankerja.Database.AppDatabase;
+import com.example.lowongankerja.Database.AppExecutors;
+import com.example.lowongankerja.Model.DaftarPerusahaan;
+import com.example.lowongankerja.Model.User;
 import com.example.lowongankerja.R;
 
 import org.json.JSONException;
@@ -34,6 +38,7 @@ public class DetailRecyclerViewAdapter extends RecyclerView.Adapter<DetailRecycl
     private List<ResultDetail> results;
     BaseApiHelper Apihelper;
     int id_user;
+    AppDatabase mDb;
     final String SHARED_PREFERENCES_NAME = "shared_preferences";
     public final static String TAG_ID = "id";
     SharedPreferences sharedPreferences;
@@ -63,6 +68,7 @@ public class DetailRecyclerViewAdapter extends RecyclerView.Adapter<DetailRecycl
         Apihelper = UtilsApi.getAPIService();
         sharedPreferences = context.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
         id_user = sharedPreferences.getInt(TAG_ID,0);
+        final String nama_user = sharedPreferences.getString("nama_user","");
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,6 +88,24 @@ public class DetailRecyclerViewAdapter extends RecyclerView.Adapter<DetailRecycl
                                             try {
                                                 jsonRESULTS = new JSONObject(response.body().string());
                                                 if (jsonRESULTS.getString("status").equals("success")) {
+
+                                                    //insert into room (lokal storage)
+
+                                                    mDb = AppDatabase.getDatabase(context);
+                                                    final DaftarPerusahaan data = new DaftarPerusahaan(
+                                                            String.valueOf(id_user),
+                                                            nama_user,
+                                                            results.get(position).getNama_stafdivisi(),
+                                                            results.get(position).getNama_perusahaan(),
+                                                            String.valueOf(results.get(position).getBiaya())
+                                                    );
+                                                    AppExecutors.getInstance().diskIO().execute(new Runnable() {
+                                                        @Override
+                                                        public void run() {
+                                                            mDb.daftarPerusahaan().insertDaftarPerusahaan(data);
+                                                        }
+                                                    });
+
                                                     Log.i("debug", "onResponse: BERHASIL");
                                                     Toast.makeText(context, "Berhasil Melamar Kerja", Toast.LENGTH_SHORT).show();
                                                     Intent mIntent = new Intent(context, BottomActivity.class);

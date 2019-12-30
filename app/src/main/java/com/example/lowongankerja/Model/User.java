@@ -11,7 +11,7 @@ public class User {
     @ColumnInfo(name = "id")
     private int id;
 
-    @ColumnInfo(name = "name")
+    @ColumnInfo(name = "nama_perusahaan")
     private String name;
 
     @ColumnInfo(name = "password")

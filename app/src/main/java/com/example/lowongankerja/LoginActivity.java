@@ -163,6 +163,7 @@ public class LoginActivity extends AppCompatActivity {
                                         editor.putBoolean(SESSION_STATUS, true);
                                         editor.putString(TAG_TOKEN, token);
                                         editor.putInt(String.valueOf(TAG_ADMIN),admin);
+                                        editor.putString("nama_user",name);
                                         editor.putInt(String.valueOf(TAG_ID), jsonRESULTS.getJSONObject("user").getInt("id"));
                                         editor.apply();
                                         Toast.makeText(mContext, "ID ANDA " + id, Toast.LENGTH_SHORT).show();
@@ -202,6 +203,7 @@ public class LoginActivity extends AppCompatActivity {
                                     editor.putBoolean(SESSION_STATUS, true);
                                     editor.putInt(String.valueOf(TAG_ID), user.getId());
                                     editor.putInt(String.valueOf(TAG_ADMIN),user.getIs_admin());
+                                    editor.putString("nama_user",user.getName());
                                     editor.commit();
                                     Intent i = new Intent(getApplicationContext(), BottomActivity.class);
                                     startActivity(i);

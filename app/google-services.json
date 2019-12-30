@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1000840415202",
+    "firebase_url": "https://lowongankerja-aeb87.firebaseio.com",
+    "project_id": "lowongankerja-aeb87",
+    "storage_bucket": "lowongankerja-aeb87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000840415202:android:e9eb9c4a1a1520b9a8dbbb",
+        "android_client_info": {
+          "package_name": "com.example.lowongankerja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000840415202-df8p9bc3g25a4c16pael3a3ggd7k33np.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lowongankerja",
+            "certificate_hash": "58f174b21bbb62da8c04f043c1ab4797c48e77a3"
+          }
+        },
+        {
+          "client_id": "1000840415202-p17tpaa3nhh50g61nmshb30sq26h9kkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWGWu9Kk0rRuTIx3D8GntbZNaeV1PEY8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000840415202-p17tpaa3nhh50g61nmshb30sq26h9kkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

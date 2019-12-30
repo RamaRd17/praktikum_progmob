@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/perusahaan_daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Perusahaan"/>
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Fee"/>
+            <TextView
+                android:id="@+id/stafdivisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Staf Divisi"/>
+            <TextView
+                android:id="@+id/biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biaya"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/hapus_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/del_daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="20sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

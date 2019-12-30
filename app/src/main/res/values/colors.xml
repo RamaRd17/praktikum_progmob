@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+<!--    <color name="themeColor">#11CFC5</color>-->
+
+<!--    &lt;!&ndash;normal colors&ndash;&gt;-->
+<!--    <color name="darkTextColor">#020000</color>-->
+
+<!--    <color name="colorNavigationIcon">#dae9f6</color>-->
+<!--    <color name="colorNavigationText">#ffffff</color>-->
+<!--    &lt;!&ndash;colors for light mode&ndash;&gt;-->
+<!--    <color name="contentTextColor">#020000</color>-->
+<!--    <color name="register_bk_color">#11CFC5</color>-->
+<!--    <color name="login_bk_color">#fff</color>-->
+<!--    <color name="whiteTextColor">#fff</color>-->
+<!--    <color name="primaryTextColor">#11CFC5</color>-->
+
+<!--    <color name="miniTitle">#000</color>-->
+<!--    <color name="miniDescription">#000</color>-->
+<!--    <color name="designMainColor">#13D3B4</color>-->
+
+
+<!--    <color name="profilePrimaryDark">#FF3B30</color>-->
+<!--    <color name="profileAccentColor">#F7F7F7</color>-->
+<!--    <color name="profileBackground">#fff</color>-->
+<!--    <color name="blackTextColor">#000</color>-->
+<!--    <color name="profileEditTextColor">#707070</color>-->
+    <color name="colorPrimary">#e59124</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#e59124</color>
+    <color name="themeColor">#e59124</color>
+
+    <!--normal colors-->
+    <color name="darkTextColor">#020000</color>
+
+    <color name="colorNavigationIcon">#dae9f6</color>
+    <color name="colorNavigationText">#ffffff</color>
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">	#e59124	</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">	#e59124	</color>
+
+    <color name="miniTitle">#000</color>
+    <color name="miniDescription">#000</color>
+    <color name="designMainColor">	#e59124	</color>
+    <color name="dashboardadmin1">	#f0e3ff	</color>
+    <color name="dashboardadmin2">	#f8b195	</color>
+    <color name="dashboardadmin3">	#8bbabb	</color>
+    <color name="dashboardadmin4">	#fc7978	</color>
+
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+</resources>

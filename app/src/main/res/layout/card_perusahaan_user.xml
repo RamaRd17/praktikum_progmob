@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/designMainColor"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/gambar_perusahaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:maxWidth="70dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/android_developer" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/perusahaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Developer"
+            android:layout_toEndOf="@id/card1"
+            android:textColor="@color/miniTitle"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:layout_below="@id/perusahaan"
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore the power of android \napplication development"
+            android:textColor="@color/miniDescription"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:maxLines="3"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

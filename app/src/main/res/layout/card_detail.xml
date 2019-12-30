@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/card_detail">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/stafdivisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KFC"/>
+        <TextView
+            android:id="@+id/tentang_stafdivisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stafdivisi"
+            android:text="Deskripsi"/>
+        <TextView
+            android:id="@+id/divisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tentang_stafdivisi"
+            android:text="Front Office"/>
+
+        <LinearLayout
+            android:layout_below="@+id/divisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/gaji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gaji"
+                android:text="Gaji per Bulan : "
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gaji"
+                android:text="300000"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

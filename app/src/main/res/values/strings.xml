@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LowonganKerja</string>
+    <string name="todo">TODO</string>
+    <string name="list_kampus">List Perusahaan</string>
+    <string name="berhasil_login">Berhasil Login</string>
+    <string name="log_out">Log Out</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="register_now">Belum Memiliki Akun? Register Now</string>
+    <string name="use_other_methods">Bukan User?</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="account">Account</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tambah">TAMBAH</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lowongankerja">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Image.GambarPerusahaan">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".Daftar.Daftar" />
+        <activity android:name=".Admin.UpdateStafActivity" />
+        <activity android:name=".Admin.TambahStafActivity" />
+        <activity android:name=".Admin.StafDivisiActivity" />
+        <activity
+            android:name=".BottomActivity"
+            android:label="@string/title_activity_bottom" />
+        <activity android:name=".Admin.AdminLoginActivity" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Perusahaan.UpdatePerusahaan" />
+        <activity android:name=".Perusahaan.DetailActivity" />
+        <activity android:name=".Perusahaan.TambahPerusahaan" />
+
+        <activity android:name=".User.EditProfile" />
+        <activity android:name=".Perusahaan.PerusahaanList" />
+        <activity android:name=".Admin.Dashboard" />
+        <activity android:name=".Divisi.Divisi" />
+        <activity android:name=".Divisi.TambahDivisi" />
+        <activity android:name=".Divisi.UpdateDivisi" />
+        <activity android:name=".Admin.Pendaftar" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.LikeService" />
+    </application>
+
+</manifest>

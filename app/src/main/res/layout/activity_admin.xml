@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:text="Log Out"-->
+<!--        android:id="@+id/logout"/>-->
+
+<!--    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton-->
+<!--        android:id="@+id/logout"-->
+<!--        style="@style/loginButton"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="@dimen/loginViewsMargin"-->
+<!--        android:layout_marginEnd="113dp"-->
+<!--        android:text="Logout"-->
+<!--        app:initialCornerAngle="27dp"-->
+<!--        app:spinning_bar_color="#FFF"-->
+<!--        app:spinning_bar_padding="6dp"-->
+<!--        app:spinning_bar_width="4dp" />-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logout"
+        android:layout_marginTop="2dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_margin="30dp"
+        android:id="@+id/tambah"/>
+
+</RelativeLayout>

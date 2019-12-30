@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.TambahStafActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/stafdivisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Staf Divisi"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/tentang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tentang"/>
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/biaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Biaya"/>
+
+    <Spinner
+        android:id="@+id/spiner_divisi"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/simpan_stafdivisi"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"/>
+
+    <Button
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Batal"/>
+
+
+
+</LinearLayout>
